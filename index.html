@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="es" data-theme="light">
   <head>
@@ -42,7 +44,9 @@
           <a href="#servicios">Servicios</a>
           <a href="#oficina">Oficina</a>
           <a href="#contacto">Contacto</a>
+          {% if site.features.citas %}
           <a href="citas/">Citas</a>
+          {% endif %}
         </div>
 
         <button
@@ -79,10 +83,16 @@
             para empresas y particulares.
           </p>
           <div class="hero-actions">
+            {% if site.features.citas %}
             <a class="btn btn-primary" href="citas/">Reservar cita</a>
             <a class="btn btn-secondary" href="mailto:alberto@ptacinsky.com"
               >Solicitar información</a
             >
+            {% else %}
+            <a class="btn btn-primary" href="mailto:alberto@ptacinsky.com"
+              >Solicitar información</a
+            >
+            {% endif %}
             <a class="btn btn-secondary" href="#oficina">Ver ubicación</a>
           </div>
         </div>
