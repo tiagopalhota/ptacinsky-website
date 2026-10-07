@@ -1,0 +1,9 @@
+# Feature flags. To turn on a feature, set it to true here and remove its
+# directory from `exclude` below (Jekyll can't drive exclude from a flag).
+features:
+  citas: false
+
+exclude:
+  - citas
+  - CLAUDE.md
+  - docs
